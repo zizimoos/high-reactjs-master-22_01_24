@@ -1,8 +1,5 @@
-import React from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import { createGlobalStyle } from "styled-components";
-import ToDoList from "./ToDoList";
+import ToDoList from "./components/ToDoList";
 
 const GlobalStyle = createGlobalStyle`
 
@@ -72,9 +69,8 @@ a {
 function App() {
   return (
     <>
-      <GlobalStyle>
-        <ToDoList></ToDoList>
-      </GlobalStyle>
+      <GlobalStyle />
+      <ToDoList />
     </>
   );
 }
